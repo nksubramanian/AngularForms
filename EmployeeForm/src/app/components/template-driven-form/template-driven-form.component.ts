@@ -2,10 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-template-driven-form',
-  standalone: true,
-  imports: [],
   templateUrl: './template-driven-form.component.html',
-  styleUrl: './template-driven-form.component.css'
+  styleUrls: ['./template-driven-form.component.css']
 })
 export class TemplateDrivenFormComponent {
   userDetails = {
@@ -22,9 +20,4 @@ export class TemplateDrivenFormComponent {
       console.log('Form data:', this.userDetails);
     }
   }
-
-
-
-
-
 }
