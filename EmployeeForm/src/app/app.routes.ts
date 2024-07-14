@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { TemplateDrivenFormComponent } from './components/template-driven-form/template-driven-form.component';
 import { ReactiveFormComponent } from './components/reactive-form/reactive-form.component';
 
-const routes: Routes = [
+export const routes: Routes = [
   {
     path:'', component:TemplateDrivenFormComponent,pathMatch:'full'
   },
@@ -23,4 +23,5 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
 
