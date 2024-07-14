@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { FormsModule } from '@angular/forms';
+
 @Component({
   selector: 'app-reactive-form',
   standalone: true,
-  imports: [FormsModule, FormGroup],
+  imports: [],
   templateUrl: './reactive-form.component.html',
   styleUrl: './reactive-form.component.css'
 })
@@ -29,7 +29,6 @@ export class ReactiveFormComponent {
       console.log('Form data:', this.userForm.value);
     }
   }
-
 
 
 }
